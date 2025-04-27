@@ -65,12 +65,14 @@ There is a “RAN OUT OF INPUT” issue on the VPS because the hardware isn’t 
 To address this, we will add a script that will help us maximize the node’s uptime.
 Please follow the steps carefully.
 
-
 like here  
 
 ![photo_2025-04-27_20-24-18](https://github.com/user-attachments/assets/a47a0930-ab61-46a7-b181-757fdde343cf)
 
 
+
+
+I HAVE MADE A SCRIPT IN ORDER TO FIX THIS PROBLEM
 
 1) Script creation
   ```bash
