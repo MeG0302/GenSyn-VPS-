@@ -74,6 +74,9 @@ like here
 
 I HAVE MADE A SCRIPT IN ORDER TO FIX THIS PROBLEM
 
+
+FIRST OF ALL STOP THE NODE BY PRESSING = CTRL+C
+
 1) Script creation
   ```bash
 nano restart.sh
