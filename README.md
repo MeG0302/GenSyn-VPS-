@@ -93,6 +93,8 @@ done
 ```
 ![Screenshot 2025-04-27 200206](https://github.com/user-attachments/assets/724402f3-5501-4dd5-b84d-67ebc3bb2d24)
 
+then CTRL X then Y enter to save it
+
 3) Give permission
 ```bash
 chmod +x restart.sh
