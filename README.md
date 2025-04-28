@@ -48,11 +48,16 @@ sudo apt update && sudo apt install -y python3 python3-venv python3-pip curl wge
 ```bash
 curl -sSL https://raw.githubusercontent.com/zunxbt/installation/main/node.sh | bash
 ```
-4. Create tmux session 
+4. Create screen session 
+```bash
+screen -S gensyn
+```
+
+5. Create tmux session 
 ```bash
 tmux
 ```
-5. Run the Node
+6. Run the Node
 ```bash
 cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
 ```bash
