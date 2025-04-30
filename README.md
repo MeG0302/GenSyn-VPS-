@@ -18,9 +18,9 @@ VPS or server with:
 
 Ubuntu 20.04, 22.04, or 24.04
 
-4+ CPUs
+(2-4)+ CPUs
 
-16+ GB RAM ( 20GB RECOMANDED )
+8 GB RAM ( 20GB RECOMANDED for better results )
 
 100+ GB SSD Storage
 
@@ -60,10 +60,36 @@ tmux
 6. Run the Node
 ```bash
 cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
-```bash
+
 ```
+.
+.
+.
+.
+.
+.
+
+Would you like to connect to the Testnet? [Y/n] 
+
+>>> Press Y to join testnet
 
 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+
+Which swarm would you like to join (Math (A) or Math Hard (B))? [A/b] 
+>>> We have two type of Swarms:
+A: Math (GSM8K dataset) -- Lower systems (>8GB) -- Use Small model (0.5B or 1.5B) for it.
+B: Math Hard (DAPO-Math 17K dataset) -- Higher systems -- Use Big model (7B, 32B or 72B) for it.
+How many parameters (in billions)? [0.5, 1.5, 7, 32, 72] >>> 0.5 is minimal and 72 is very big model. Choose based on your system.
+
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+
+.
+.
+.
+.
+.
+.
 
 Now we are moving on to the most important part, which is crucial for maximizing node uptime.
 There is a “RAN OUT OF INPUT” issue on the VPS because the hardware isn’t powerful enough for AI training.
@@ -77,7 +103,7 @@ like here
 
 
 
-I HAVE MADE A SCRIPT IN ORDER TO FIX THIS PROBLEM
+I HAVE MADE A UPDATED SCRIPT IN ORDER TO FIX THIS PROBLEM
 
 
 FIRST OF ALL STOP THE NODE BY PRESSING = CTRL+C
@@ -91,10 +117,11 @@ nano restart.sh
 ```bash
 #!/bin/bash
 while true; do
-    printf "1\nn\n" | ./gensyn-testnet/gensyn.sh
-    echo "Process crashed or stopped. Restarting in 60 seconds..."
-    sleep 60
+    printf "1\na\n0.5\nn\n" | ./gensyn-testnet/gensyn.sh
+    echo "Process crashed or stopped. Restarting in 30 seconds..."
+    sleep 30
 done
+
 ```
 ![Screenshot 2025-04-27 200206](https://github.com/user-attachments/assets/724402f3-5501-4dd5-b84d-67ebc3bb2d24)
 
@@ -110,6 +137,6 @@ chmod +x restart.sh
 ```
 
 Now, your script is ready  
-and every time your node stops or shut down due to any problem it will restart in 60 sec. no involvemnt is required  
+and every time your node stops or shut down due to any problem it will restart in 30 sec. no involvemnt is required  
 
 MAKE SURE TO FOLLOW - https://x.com/Jaishiva0302
