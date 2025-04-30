@@ -60,7 +60,6 @@ tmux
 6. Run the Node
 ```bash
 cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
-
 ```
 .
 .
