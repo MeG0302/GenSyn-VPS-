@@ -82,6 +82,9 @@ A: Math (GSM8K dataset) -- Lower systems (>8GB) -- Use Small model (0.5B or 1.5B
 B: Math Hard (DAPO-Math 17K dataset) -- Higher systems -- Use Big model (7B, 32B or 72B) for it.
 How many parameters (in billions)? [0.5, 1.5, 7, 32, 72] >>> 0.5 is minimal and 72 is very big model. Choose based on your system.
 
+
+AS FOR NOW CHOOSE OPTION "A" THEN "0.5B"
+
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 
 .
