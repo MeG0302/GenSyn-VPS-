@@ -34,6 +34,7 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 ![Screenshot 2025-05-05 171422](https://github.com/user-attachments/assets/eefe6b7f-3990-49b1-b25d-e0a968653c9f)
 
 
+- LOG IN with the same email (for the same swarm.pem)
 
 
 press "N" when it ask you ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` here Write `N` 
