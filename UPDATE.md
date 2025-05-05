@@ -50,3 +50,28 @@ press "N" when it ask you ```Would you like to push models you train in the RL s
 
 ### 6. Detach from this screen session
 - Use `Ctrl + A` and then press `D` to detach from this screen session.
+
+
+#
+#
+#
+#
+
+## NOTE 
+Even after successful installation you still see your EOA address as 0x0000000000000000.............
+
+then 
+### STOP NODE
+> repeat step 1 and 2 then paste this command 
+
+```
+pkill -f rl-swarm
+
+```
+
+>> caution : Dont use this command if you are running other nodes in this vps aswell.
+
+
+After that repeat whole step after step 3 
+it will definately work
+
