@@ -18,7 +18,14 @@ then create a new screen
 ```
 screen -S gensyn
 ```
-### 2.  Use this command to run the `rl-swarm`
+### 2. Delete exisiting temp-data
+
+```
+[ -n "$(ls "$HOME/rl-swarm/modal-login/temp-data/"*.json 2>/dev/null)" ] && rm -f "$HOME/rl-swarm/modal-login/temp-data/"*.json 2>/dev/null || true
+
+```
+
+### 3. Use this command to run the `rl-swarm`
 ```
 cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
 ```
@@ -30,13 +37,15 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 
 
 press "N" when it ask you ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` here Write `N` 
-### 3. Configuration
+
+### 4. Configuration
 > # Press "A" to select (MATH) then type "0.5" if you are running in vps (to avoid any failure)
-### 4. Normal logs
+
+### 5. Normal logs
 > these are the normal logs after which you can detach from the screen 
 #
 ![Screenshot 2025-05-05 172337](https://github.com/user-attachments/assets/18edbbb8-ead3-4cae-ab65-19bb45ebcf83)
 
 
-### 5. Detach from this screen session
+### 6. Detach from this screen session
 - Use `Ctrl + A` and then press `D` to detach from this screen session.
