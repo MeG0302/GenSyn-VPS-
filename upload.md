@@ -4,13 +4,29 @@
 upload your swarm.pem file into -> https://tmpfiles.org/
 
 ### STEP 2 
-copy the link generated there
+copy the link generated there and paste it somewhere
 
 ![Screenshot 2025-05-06 024112](https://github.com/user-attachments/assets/3fcfb09c-cbc8-474f-8aa9-eeebdc6e3a44)
 
-
 ### STEP 3
-add wget before the link and paste this code in your VPS/GPU
+Before moving swarm.pem you need to create rl-swarm folder and in order to make that folder just use this guide until login process (when you see login prompt in your terminal just stop the node using ctrl c)
+https://github.com/MeG0302/GenSyn-VPS-/
+
+### STEP 4
+Delete the previous swarm.pem from the rl-swarm folder before preceeding 
+```
+# 1. Make sure the rl-swarm directory exists and you're in the right place
+ls /root/rl-swarm
+```
+```
+# 2. Delete the old swarm.pem file
+rm /root/rl-swarm/swarm.pem
+
+```
+
+
+### STEP 4
+Add "wget" before the link you saved and paste this code in your VPS/GPU
 
 > example = 
 ```
@@ -19,21 +35,19 @@ wget https://tmpfiles.org/xxxxxx/swarm.pem
 
 
 ```
-### STEP 3
-Before moving swarm.pem you need to create rl-swarm folder and in order to make that folder just use this guide until login process (when you see login prompt in your terminal just stop the node using ctrl c)
-https://github.com/MeG0302/GenSyn-VPS-/
 
-### STEP 4
+
+### STEP 5
 move file to the rl-swarm folder 
 ```
 
-
-sudo mv swarm.pem /rl-swarm/
+# 3. Move the new file
+mv swarm.pem /root/rl-swarm/
 
 
 ```
 
-### STEP 5
+### STEP 6
 Now complete the whole node installation as in the guide https://github.com/MeG0302/GenSyn-VPS-/
 
 NOTE
