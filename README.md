@@ -108,37 +108,3 @@ like here
 I HAVE MADE A UPDATED SCRIPT IN ORDER TO FIX THIS PROBLEM
 
 
-FIRST OF ALL STOP THE NODE BY PRESSING = CTRL+C
-
-1) Script creation
-  ```bash
-nano restart.sh
-```
-
-2) paste this 
-```bash
-#!/bin/bash
-while true; do
-    printf "1\na\n0.5\nn\n" | ./gensyn-testnet/gensyn.sh
-    echo "Process crashed or stopped. Restarting in 30 seconds..."
-    sleep 30
-done
-
-```
-![Screenshot 2025-04-27 200206](https://github.com/user-attachments/assets/724402f3-5501-4dd5-b84d-67ebc3bb2d24)
-
-then CTRL X then Y enter to save it
-
-3) Give permission
-```bash
-chmod +x restart.sh
-```
-4) Start
-```bash
-./restart.sh
-```
-
-Now, your script is ready  
-and every time your node stops or shut down due to any problem it will restart in 30 sec. no involvemnt is required  
-
-MAKE SURE TO FOLLOW - https://x.com/Jaishiva0302
