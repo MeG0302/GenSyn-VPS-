@@ -9,11 +9,11 @@ copy the link generated there and paste it somewhere
 ![Screenshot 2025-05-06 024112](https://github.com/user-attachments/assets/3fcfb09c-cbc8-474f-8aa9-eeebdc6e3a44)
 
 ### STEP 3
-Before moving swarm.pem you need to create rl-swarm folder and in order to make that folder just use this guide until login process (when you see login prompt in your terminal just stop the node using ctrl c)
+Complete whole process of node run (also use the same email you just uploaded swarm.pem file[previous login data])
 https://github.com/MeG0302/GenSyn-VPS-/
 
 ### STEP 4
-Delete the previous swarm.pem from the rl-swarm folder before preceeding 
+Stop the current node with ctrl C then delete the previous swarm.pem from the rl-swarm folder before preceeding 
 ```
 # 1. Make sure the rl-swarm directory exists and you're in the right place
 ls /root/rl-swarm
